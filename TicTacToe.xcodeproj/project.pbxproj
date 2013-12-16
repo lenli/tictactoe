@@ -25,6 +25,7 @@
 		BAA114E0185EB7A300358D0A /* tictactoe-blank.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114DD185EB7A300358D0A /* tictactoe-blank.png */; };
 		BAA114E1185EB7A300358D0A /* tictactoe-O.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114DE185EB7A300358D0A /* tictactoe-O.png */; };
 		BAA114E2185EB7A300358D0A /* tictactoe-X.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114DF185EB7A300358D0A /* tictactoe-X.png */; };
+		BAA114E5185EB88400358D0A /* LLSquareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA114E4185EB88400358D0A /* LLSquareCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		BAA114DD185EB7A300358D0A /* tictactoe-blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tictactoe-blank.png"; sourceTree = "<group>"; };
 		BAA114DE185EB7A300358D0A /* tictactoe-O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tictactoe-O.png"; sourceTree = "<group>"; };
 		BAA114DF185EB7A300358D0A /* tictactoe-X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tictactoe-X.png"; sourceTree = "<group>"; };
+		BAA114E3185EB88400358D0A /* LLSquareCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSquareCollectionViewCell.h; sourceTree = "<group>"; };
+		BAA114E4185EB88400358D0A /* LLSquareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSquareCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				BAA114B8185EAD3500358D0A /* LLViewController.m */,
 				BAA114DA185EB53400358D0A /* LLSquaresCollectionViewController.h */,
 				BAA114DB185EB53400358D0A /* LLSquaresCollectionViewController.m */,
+				BAA114E3185EB88400358D0A /* LLSquareCollectionViewCell.h */,
+				BAA114E4185EB88400358D0A /* LLSquareCollectionViewCell.m */,
 				BAA114BA185EAD3500358D0A /* Images.xcassets */,
 				BAA114A9185EAD3500358D0A /* Supporting Files */,
 			);
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA114E5185EB88400358D0A /* LLSquareCollectionViewCell.m in Sources */,
 				BAA114B3185EAD3500358D0A /* LLAppDelegate.m in Sources */,
 				BAA114DC185EB53400358D0A /* LLSquaresCollectionViewController.m in Sources */,
 				BAA114AF185EAD3500358D0A /* main.m in Sources */,

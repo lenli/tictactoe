@@ -7,6 +7,7 @@
 //
 
 #import "LLSquaresCollectionViewController.h"
+#import "LLSquareCollectionViewCell.h"
 
 @interface LLSquaresCollectionViewController ()
 
@@ -37,7 +38,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSArray *test = [[NSArray alloc] initWithObjects:@"X", @"X", @"X", @"X", @"X", @"X", @"X", @"X", @"X", nil];
+    NSArray *test = [[NSArray alloc] initWithObjects:@"X", @"O", @"", @"X", @"X", @"X", @"X", @"X", @"X", nil];
     self.squares = [test mutableCopy];
     [self.collectionView reloadData];
     
@@ -53,12 +54,12 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+    LLSquareCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     
     NSString *player = self.squares[indexPath.row];
     
-    cell.backgroundColor = [UIColor redColor];
-//    cell.imageView.image = [UIImage imageNamed:@"tictactoe-X.png"];
+    cell.backgroundColor = [UIColor yellowColor];
+    cell.imageView.image = [self getSquareBackground:player];
     
     return cell;
 }
