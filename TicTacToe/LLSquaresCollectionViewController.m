@@ -117,7 +117,12 @@
         UIAlertView *gameOver = [[UIAlertView alloc] initWithTitle:@"Game Over" message:messageText delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"New Game", nil];
         [gameOver setAlertViewStyle:UIAlertViewStyleDefault];
         [gameOver show];
-    } 
+    } else if (![self.squares containsObject:@""]) {
+        NSString *messageText = [[NSString alloc] initWithFormat:@"It's a tie."];
+        UIAlertView *gameOver = [[UIAlertView alloc] initWithTitle:@"Game Over" message:messageText delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"New Game", nil];
+        [gameOver setAlertViewStyle:UIAlertViewStyleDefault];
+        [gameOver show];
+    }
 }
 -(void)setupBoard
 {
