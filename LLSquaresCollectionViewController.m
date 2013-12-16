@@ -33,15 +33,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self togglePlayerTurn];
+    NSArray *initialBoard = [[NSArray alloc] initWithObjects:@"", @"", @"", @"", @"", @"", @"", @"", @"", nil];
+    self.squares = [initialBoard mutableCopy];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSArray *test = [[NSArray alloc] initWithObjects:@"X", @"O", @"", @"X", @"X", @"X", @"X", @"X", @"X", nil];
-    self.squares = [test mutableCopy];
     [self.collectionView reloadData];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,14 +55,19 @@
 {
     static NSString *CellIdentifier = @"Cell";
     LLSquareCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
-    
     NSString *player = self.squares[indexPath.row];
-    
-    cell.backgroundColor = [UIColor yellowColor];
-    cell.imageView.image = [self getSquareBackground:player];
-    
+    NSLog(@"%@", player);
+    [cell updateSquareBackground:player];
+
     return cell;
 }
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.squares replaceObjectAtIndex:indexPath.row withObject:self.playerTurn];
+    [self togglePlayerTurn];
+    [self.collectionView reloadData];
+}
+
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     return [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"Header" forIndexPath:indexPath];
@@ -74,17 +79,13 @@
 }
 
 #pragma mark - Helper Methods
--(UIImage *)getSquareBackground:(NSString *)player
+-(void)togglePlayerTurn
 {
-    if ([player isEqual: @"X"]) {
-        return [UIImage imageNamed:@"tictactoe-X.png"];
-    } else if ([player isEqual: @"O"]) {
-        return [UIImage imageNamed:@"tictactoe-O.png"];
+    if ([self.playerTurn isEqual: @"X"]) {
+        self.playerTurn = @"O";
     } else {
-        return [UIImage imageNamed:@"tictactoe-blank.png"];
+        self.playerTurn = @"X";
     }
-    NSLog(@"getSquareBackground");
-    
 }
 
 @end

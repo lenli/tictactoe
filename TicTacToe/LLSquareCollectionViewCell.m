@@ -32,9 +32,24 @@
 -(void)setup
 {
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectInset(self.bounds, IMAGEVIEW_BORDER_LENGTH, IMAGEVIEW_BORDER_LENGTH)];
-    [self.contentView addSubview:self.imageView];
-    
+    self.imageView.backgroundColor = [UIColor yellowColor];
+    [self addSubview:self.imageView];
+
 }
+
+
+#pragma mark - Helper Methods
+-(void)updateSquareBackground:(NSString *)player
+{
+    if ([player isEqual: @"X"]) {
+        self.imageView.image = [UIImage imageNamed:@"tictactoe-X.png"];
+    } else if ([player isEqual: @"O"]) {
+        self.imageView.image = [UIImage imageNamed:@"tictactoe-O.png"];
+    } else {
+        self.imageView.image = [UIImage imageNamed:@"tictactoe-blank.png"];
+    }
+}
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

@@ -10,5 +10,7 @@
 
 @interface LLSquareCollectionViewCell : UICollectionViewCell
 @property (strong, nonatomic) UIImageView *imageView;
+@property (strong, nonatomic) NSString *playerName;
+-(void)updateSquareBackground:(NSString *)player;
 
 @end

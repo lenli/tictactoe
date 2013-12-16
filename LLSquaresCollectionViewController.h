@@ -10,5 +10,6 @@
 
 @interface LLSquaresCollectionViewController : UICollectionViewController
 @property (strong, nonatomic) NSMutableArray *squares;
+@property (strong, nonatomic) NSString *playerTurn;
 
 @end
