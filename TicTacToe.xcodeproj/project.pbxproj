@@ -20,7 +20,6 @@
 		BAA114C4185EAD3500358D0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA114A6185EAD3500358D0A /* UIKit.framework */; };
 		BAA114CC185EAD3500358D0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAA114CA185EAD3500358D0A /* InfoPlist.strings */; };
 		BAA114CE185EAD3500358D0A /* TicTacToeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA114CD185EAD3500358D0A /* TicTacToeTests.m */; };
-		BAA114DC185EB53400358D0A /* LLSquaresCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA114DB185EB53400358D0A /* LLSquaresCollectionViewController.m */; };
 		BAA114E0185EB7A300358D0A /* tictactoe-blank.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114DD185EB7A300358D0A /* tictactoe-blank.png */; };
 		BAA114E1185EB7A300358D0A /* tictactoe-O.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114DE185EB7A300358D0A /* tictactoe-O.png */; };
 		BAA114E2185EB7A300358D0A /* tictactoe-X.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114DF185EB7A300358D0A /* tictactoe-X.png */; };
@@ -30,6 +29,7 @@
 		BAA114EF185EEF6900358D0A /* tictactoelogo58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114EA185EEF6900358D0A /* tictactoelogo58x58.png */; };
 		BAA114F2185EEFFB00358D0A /* tictactoe_launch640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114F0185EEFFB00358D0A /* tictactoe_launch640x960.png */; };
 		BAA114F3185EEFFB00358D0A /* tictactoe_launch640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114F1185EEFFB00358D0A /* tictactoe_launch640x1136.png */; };
+		BAA114F6185EF2C800358D0A /* LLSquaresCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA114F5185EF2C800358D0A /* LLSquaresCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,6 @@
 		BAA114C9185EAD3500358D0A /* TicTacToeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicTacToeTests-Info.plist"; sourceTree = "<group>"; };
 		BAA114CB185EAD3500358D0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BAA114CD185EAD3500358D0A /* TicTacToeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicTacToeTests.m; sourceTree = "<group>"; };
-		BAA114DA185EB53400358D0A /* LLSquaresCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLSquaresCollectionViewController.h; path = ../LLSquaresCollectionViewController.h; sourceTree = "<group>"; };
-		BAA114DB185EB53400358D0A /* LLSquaresCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLSquaresCollectionViewController.m; path = ../LLSquaresCollectionViewController.m; sourceTree = "<group>"; };
 		BAA114DD185EB7A300358D0A /* tictactoe-blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tictactoe-blank.png"; sourceTree = "<group>"; };
 		BAA114DE185EB7A300358D0A /* tictactoe-O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tictactoe-O.png"; sourceTree = "<group>"; };
 		BAA114DF185EB7A300358D0A /* tictactoe-X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tictactoe-X.png"; sourceTree = "<group>"; };
@@ -72,6 +70,8 @@
 		BAA114EA185EEF6900358D0A /* tictactoelogo58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tictactoelogo58x58.png; sourceTree = "<group>"; };
 		BAA114F0185EEFFB00358D0A /* tictactoe_launch640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tictactoe_launch640x960.png; sourceTree = "<group>"; };
 		BAA114F1185EEFFB00358D0A /* tictactoe_launch640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tictactoe_launch640x1136.png; sourceTree = "<group>"; };
+		BAA114F4185EF2C800358D0A /* LLSquaresCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSquaresCollectionViewController.h; sourceTree = "<group>"; };
+		BAA114F5185EF2C800358D0A /* LLSquaresCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSquaresCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 				BAA114B1185EAD3500358D0A /* LLAppDelegate.h */,
 				BAA114B2185EAD3500358D0A /* LLAppDelegate.m */,
 				BAA114B4185EAD3500358D0A /* Main.storyboard */,
-				BAA114DA185EB53400358D0A /* LLSquaresCollectionViewController.h */,
-				BAA114DB185EB53400358D0A /* LLSquaresCollectionViewController.m */,
+				BAA114F4185EF2C800358D0A /* LLSquaresCollectionViewController.h */,
+				BAA114F5185EF2C800358D0A /* LLSquaresCollectionViewController.m */,
 				BAA114E3185EB88400358D0A /* LLSquareCollectionViewCell.h */,
 				BAA114E4185EB88400358D0A /* LLSquareCollectionViewCell.m */,
 				BAA114BA185EAD3500358D0A /* Images.xcassets */,
@@ -288,8 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA114E5185EB88400358D0A /* LLSquareCollectionViewCell.m in Sources */,
+				BAA114F6185EF2C800358D0A /* LLSquaresCollectionViewController.m in Sources */,
 				BAA114B3185EAD3500358D0A /* LLAppDelegate.m in Sources */,
-				BAA114DC185EB53400358D0A /* LLSquaresCollectionViewController.m in Sources */,
 				BAA114AF185EAD3500358D0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
