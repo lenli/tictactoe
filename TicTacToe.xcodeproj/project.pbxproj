@@ -14,7 +14,6 @@
 		BAA114AF185EAD3500358D0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA114AE185EAD3500358D0A /* main.m */; };
 		BAA114B3185EAD3500358D0A /* LLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA114B2185EAD3500358D0A /* LLAppDelegate.m */; };
 		BAA114B6185EAD3500358D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA114B4185EAD3500358D0A /* Main.storyboard */; };
-		BAA114B9185EAD3500358D0A /* LLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA114B8185EAD3500358D0A /* LLViewController.m */; };
 		BAA114BB185EAD3500358D0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA114BA185EAD3500358D0A /* Images.xcassets */; };
 		BAA114C2185EAD3500358D0A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA114C1185EAD3500358D0A /* XCTest.framework */; };
 		BAA114C3185EAD3500358D0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA114A2185EAD3500358D0A /* Foundation.framework */; };
@@ -26,6 +25,11 @@
 		BAA114E1185EB7A300358D0A /* tictactoe-O.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114DE185EB7A300358D0A /* tictactoe-O.png */; };
 		BAA114E2185EB7A300358D0A /* tictactoe-X.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114DF185EB7A300358D0A /* tictactoe-X.png */; };
 		BAA114E5185EB88400358D0A /* LLSquareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA114E4185EB88400358D0A /* LLSquareCollectionViewCell.m */; };
+		BAA114ED185EEF6900358D0A /* tictactoelogo120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114E8185EEF6900358D0A /* tictactoelogo120x120.png */; };
+		BAA114EE185EEF6900358D0A /* tictactoelogo80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114E9185EEF6900358D0A /* tictactoelogo80x80.png */; };
+		BAA114EF185EEF6900358D0A /* tictactoelogo58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114EA185EEF6900358D0A /* tictactoelogo58x58.png */; };
+		BAA114F2185EEFFB00358D0A /* tictactoe_launch640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114F0185EEFFB00358D0A /* tictactoe_launch640x960.png */; };
+		BAA114F3185EEFFB00358D0A /* tictactoe_launch640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA114F1185EEFFB00358D0A /* tictactoe_launch640x1136.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +54,6 @@
 		BAA114B1185EAD3500358D0A /* LLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAppDelegate.h; sourceTree = "<group>"; };
 		BAA114B2185EAD3500358D0A /* LLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAppDelegate.m; sourceTree = "<group>"; };
 		BAA114B5185EAD3500358D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BAA114B7185EAD3500358D0A /* LLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLViewController.h; sourceTree = "<group>"; };
-		BAA114B8185EAD3500358D0A /* LLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLViewController.m; sourceTree = "<group>"; };
 		BAA114BA185EAD3500358D0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BAA114C0185EAD3500358D0A /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA114C1185EAD3500358D0A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,6 +67,11 @@
 		BAA114DF185EB7A300358D0A /* tictactoe-X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tictactoe-X.png"; sourceTree = "<group>"; };
 		BAA114E3185EB88400358D0A /* LLSquareCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSquareCollectionViewCell.h; sourceTree = "<group>"; };
 		BAA114E4185EB88400358D0A /* LLSquareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSquareCollectionViewCell.m; sourceTree = "<group>"; };
+		BAA114E8185EEF6900358D0A /* tictactoelogo120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tictactoelogo120x120.png; sourceTree = "<group>"; };
+		BAA114E9185EEF6900358D0A /* tictactoelogo80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tictactoelogo80x80.png; sourceTree = "<group>"; };
+		BAA114EA185EEF6900358D0A /* tictactoelogo58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tictactoelogo58x58.png; sourceTree = "<group>"; };
+		BAA114F0185EEFFB00358D0A /* tictactoe_launch640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tictactoe_launch640x960.png; sourceTree = "<group>"; };
+		BAA114F1185EEFFB00358D0A /* tictactoe_launch640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tictactoe_launch640x1136.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +134,6 @@
 				BAA114B1185EAD3500358D0A /* LLAppDelegate.h */,
 				BAA114B2185EAD3500358D0A /* LLAppDelegate.m */,
 				BAA114B4185EAD3500358D0A /* Main.storyboard */,
-				BAA114B7185EAD3500358D0A /* LLViewController.h */,
-				BAA114B8185EAD3500358D0A /* LLViewController.m */,
 				BAA114DA185EB53400358D0A /* LLSquaresCollectionViewController.h */,
 				BAA114DB185EB53400358D0A /* LLSquaresCollectionViewController.m */,
 				BAA114E3185EB88400358D0A /* LLSquareCollectionViewCell.h */,
@@ -142,6 +147,11 @@
 		BAA114A9185EAD3500358D0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BAA114E8185EEF6900358D0A /* tictactoelogo120x120.png */,
+				BAA114E9185EEF6900358D0A /* tictactoelogo80x80.png */,
+				BAA114F0185EEFFB00358D0A /* tictactoe_launch640x960.png */,
+				BAA114F1185EEFFB00358D0A /* tictactoe_launch640x1136.png */,
+				BAA114EA185EEF6900358D0A /* tictactoelogo58x58.png */,
 				BAA114DD185EB7A300358D0A /* tictactoe-blank.png */,
 				BAA114DE185EB7A300358D0A /* tictactoe-O.png */,
 				BAA114DF185EB7A300358D0A /* tictactoe-X.png */,
@@ -252,8 +262,13 @@
 				BAA114AD185EAD3500358D0A /* InfoPlist.strings in Resources */,
 				BAA114E1185EB7A300358D0A /* tictactoe-O.png in Resources */,
 				BAA114B6185EAD3500358D0A /* Main.storyboard in Resources */,
+				BAA114EF185EEF6900358D0A /* tictactoelogo58x58.png in Resources */,
+				BAA114F2185EEFFB00358D0A /* tictactoe_launch640x960.png in Resources */,
+				BAA114EE185EEF6900358D0A /* tictactoelogo80x80.png in Resources */,
+				BAA114ED185EEF6900358D0A /* tictactoelogo120x120.png in Resources */,
 				BAA114E0185EB7A300358D0A /* tictactoe-blank.png in Resources */,
 				BAA114E2185EB7A300358D0A /* tictactoe-X.png in Resources */,
+				BAA114F3185EEFFB00358D0A /* tictactoe_launch640x1136.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +291,6 @@
 				BAA114B3185EAD3500358D0A /* LLAppDelegate.m in Sources */,
 				BAA114DC185EB53400358D0A /* LLSquaresCollectionViewController.m in Sources */,
 				BAA114AF185EAD3500358D0A /* main.m in Sources */,
-				BAA114B9185EAD3500358D0A /* LLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

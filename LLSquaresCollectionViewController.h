@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LLSquaresCollectionViewController : UICollectionViewController
+@interface LLSquaresCollectionViewController : UICollectionViewController <UIAlertViewDelegate>
 @property (strong, nonatomic) NSMutableArray *squares;
 @property (strong, nonatomic) NSString *playerTurn;
+- (IBAction)newGameButtonPressed:(UIButton *)sender;
 
 @end
