@@ -59,7 +59,7 @@
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([self.squares[indexPath.row] isEqual:@""]) {
+    if ([self.squares[indexPath.row] isEqual:@""] && !self.gameOver) {
         [self.squares replaceObjectAtIndex:indexPath.row withObject:self.playerTurn];
         [self checkGameStatus];
         [self togglePlayerTurn];
@@ -114,18 +114,21 @@
 {
     if (self.isGameOver) {
         NSString *messageText = [[NSString alloc] initWithFormat:@"Player %@ won.", self.playerTurn];
-        UIAlertView *gameOver = [[UIAlertView alloc] initWithTitle:@"Game Over" message:messageText delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"New Game", nil];
-        [gameOver setAlertViewStyle:UIAlertViewStyleDefault];
-        [gameOver show];
+        UIAlertView *alertGameOver = [[UIAlertView alloc] initWithTitle:@"Game Over" message:messageText delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"New Game", nil];
+        [alertGameOver setAlertViewStyle:UIAlertViewStyleDefault];
+        [alertGameOver show];
+        self.gameOver = TRUE;
     } else if (![self.squares containsObject:@""]) {
         NSString *messageText = [[NSString alloc] initWithFormat:@"It's a tie."];
-        UIAlertView *gameOver = [[UIAlertView alloc] initWithTitle:@"Game Over" message:messageText delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"New Game", nil];
-        [gameOver setAlertViewStyle:UIAlertViewStyleDefault];
-        [gameOver show];
+        UIAlertView *alertGameOver = [[UIAlertView alloc] initWithTitle:@"Game Over" message:messageText delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"New Game", nil];
+        [alertGameOver setAlertViewStyle:UIAlertViewStyleDefault];
+        [alertGameOver show];
+        self.gameOver = TRUE;
     }
 }
 -(void)setupBoard
 {
+    self.gameOver = FALSE;
     self.playerTurn = @"X";
     NSArray *initialBoard = [[NSArray alloc] initWithObjects:@"", @"", @"", @"", @"", @"", @"", @"", @"", nil];
     self.squares = [initialBoard mutableCopy];

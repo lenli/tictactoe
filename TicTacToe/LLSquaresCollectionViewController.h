@@ -11,6 +11,7 @@
 @interface LLSquaresCollectionViewController : UICollectionViewController <UIAlertViewDelegate>
 @property (strong, nonatomic) NSMutableArray *squares;
 @property (strong, nonatomic) NSString *playerTurn;
+@property (nonatomic) BOOL gameOver;
 - (IBAction)newGameButtonPressed:(UIButton *)sender;
 
 @end
